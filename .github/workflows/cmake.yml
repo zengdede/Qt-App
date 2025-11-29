@@ -1,4 +1,4 @@
-name: CMake Build and Release
+﻿name: CMake Build and Release
 
 on:
   push:
@@ -44,8 +44,8 @@ jobs:
       matrix:
         os:
           - windows-latest
-          - ubuntu-latest
-          - macos-latest
+          # - ubuntu-latest
+          # - macos-latest
         generators:
           - "Ninja"
         arch:

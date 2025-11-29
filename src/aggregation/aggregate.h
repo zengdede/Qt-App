@@ -71,8 +71,9 @@ namespace Aggregation
 // get a component via global template function
     template <typename T> T* query(Aggregate* obj)
     {
-        if (!obj)
+        if (!obj) {
             return nullptr;
+        }
         return obj->template component<T>();
     }
 
